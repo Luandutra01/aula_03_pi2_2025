@@ -10,7 +10,7 @@ const router = express.Router();
 router.post('/', async (req, res, next) => {
     try {
         const aluno = await Aluno.create(req.body);
-        return res.status(201),json(aluno);
+        return res.status(201).json(aluno);
     } catch (error) {
         next(error); //Criar a rota de interceptação
     }
