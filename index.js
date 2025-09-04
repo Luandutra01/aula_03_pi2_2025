@@ -7,7 +7,6 @@ const dotenv = require('dotenv');
 const conectaDB = require('./db');
 const alunosRouter = require('./routes/alunos.routes'); //Rotas
 
-
 const port = 3000;
 
 const app = express();
