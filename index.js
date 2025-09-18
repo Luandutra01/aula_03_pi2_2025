@@ -6,12 +6,14 @@ const dotenv = require('dotenv');
 //
 const conectaDB = require('./db');
 const alunosRouter = require('./routes/alunos.routes'); //Rotas
+const cors = require('cors'); //npm install cors --save
 
 const port = 3000;
 
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 dotenv.config();
 
